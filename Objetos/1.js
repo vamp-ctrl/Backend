@@ -6,7 +6,7 @@ let apartamento = {
     andar: 7
     };
     
-    console.log(`Questão 1 - Apartamento\n Apartamento com ${apartamento.quartos} quartos, localizado no ${apartamento.andar}º andar da ${apartamento.endereco}.\n`);
+    console.log(`Apartamento com ${apartamento.quartos} quartos, localizado no ${apartamento.andar}º andar da ${apartamento.endereco}.\n`);
     
 //2
 let produtoEmbalado = {
@@ -14,26 +14,26 @@ let produtoEmbalado = {
     categoria:"eletronicos",
     peso: 1.5,
     preco:3500.00
-    };
-    console.log('Questão 2 - Produto\n O produto embalado',produtoEmbalado.nome,'da categoria', produtoEmbalado.categoria, 'pesando', produtoEmbalado.peso,'kg, esta a venda por R$', produtoEmbalado.preco,".")
+    }
+    console.log(`O produto embalado ${produtoEmbalado.nome} da categoria ${produtoEmbalado.categoria} pesando ${produtoEmbalado.peso} kg, esta a venda por R$ ${produtoEmbalado.preco.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})}`);
     
 //3
 class Imovel {
     constructor(quarto, tipos, enderecos) {
-    this.quarto = quarto,
-    this.tipos = tipos,
+    this.quarto = quarto;
+    this.tipos = tipos;
     this.enderecos = enderecos;
     }
     
     exibirInformacoes() {
     return `${this.tipos} com ${this.quarto} quartos, localizado em ${this.enderecos}`;
     }
-    }
+}
     
-    const casa = new Imovel(4, "Casa", "Rua da Amizade, 789 - Bairro Alegre");
-    const apartamentos = new Imovel(2, "Apartamento", "Avenida da Paz, 123 - Centro");
+    let casa = new Imovel(4, "Casa", "Rua da Amizade, 789 - Bairro Alegre");
+    let apartamentos = new Imovel(2, "Apartamento", "Avenida da Paz, 123 - Centro");
     
-    console.log("\nQuestão 3 - Imovel\n",casa.exibirInformacoes());
+    console.log(casa.exibirInformacoes());
     console.log(apartamentos.exibirInformacoes());
     
 //4
