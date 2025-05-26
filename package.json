@@ -1,17 +1,16 @@
 {
-  "dependencies": {
-    "readline-sync": "^1.4.10"
-  },
-  "name": "estruturas-condicionais",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "1.js",
+  "main": "exemploclasse.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
